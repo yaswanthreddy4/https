@@ -1,0 +1,5 @@
+---
+- name: installing multiple packages at a time
+  yum: name=httpd state=installed
+- name: copying files
+  copy: src=index.html dest=/var/www/html/index.html
